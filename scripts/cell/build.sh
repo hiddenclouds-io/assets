@@ -21,7 +21,7 @@ cat << EOF
  [*] run cell
 -------------------------
 EOF
-cargo run -- --help
+cargo run  --release -- --help
 
 "$@"
 
