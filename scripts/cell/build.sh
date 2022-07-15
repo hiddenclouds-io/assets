@@ -12,7 +12,9 @@ ls -al ./
 #source <(wget -q -O - https://raw.githubusercontent.com/hiddenclouds-io/cell/main/scripts/build.sh) "$@"
 cd /$HOME
 cat << EOF
- [*] test cell
+
+-------------------------
+ [*] begin test cell
 -------------------------
 EOF
 cargo test
@@ -24,5 +26,12 @@ EOF
 cargo run  --release -- --help
 
 "$@"
+
+cat << EOF
+-------------------------
+ [*] end test cell
+-------------------------
+
+EOF
 
 #ls -la ./target/debug
