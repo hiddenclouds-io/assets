@@ -6,9 +6,9 @@
 [[ -f "./~tmp" ]] && rm ./~tmp
 
 echo ""
-echo "  Cell p2p streaming project "
+echo "  cell p2p streaming project "
 echo ""
-
+ls -al ./
 #source <(wget -q -O - https://raw.githubusercontent.com/hiddenclouds-io/cell/main/scripts/build.sh) "$@"
 cd /$HOME
 cat << EOF
