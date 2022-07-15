@@ -8,7 +8,7 @@
 echo ""
 echo "  cell p2p streaming project "
 echo ""
-ls -al ./
+#ls -al ./
 #source <(wget -q -O - https://raw.githubusercontent.com/hiddenclouds-io/cell/main/scripts/build.sh) "$@"
 cd /$HOME
 cat << EOF
@@ -16,6 +16,7 @@ cat << EOF
 -------------------------
  [*] begin test cell
 -------------------------
+
 EOF
 cargo test
 
@@ -28,6 +29,7 @@ cargo run  --release -- --help
 "$@"
 
 cat << EOF
+
 -------------------------
  [*] end test cell
 -------------------------
